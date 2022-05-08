@@ -2,7 +2,7 @@ input{
     margin: 5px;
     padding: 10px;
 }
-.circle{
+.circle {
     width: 200px;
     height: 200px;
     -webkit-border-radius: 100px;
@@ -14,9 +14,20 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
+    position: fixed;
+    top: 300px;
+    right: 315px;
 }
+.dot {
+    height: 1.5px;
+    width: 200px;
+    background-color: black;
+    display: inline-block;
+    position: fixed;
+    top: 405px;
+    right: 318px;
+}
+
 img {
     position: absolute;
     top: 0px;
