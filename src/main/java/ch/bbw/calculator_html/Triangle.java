@@ -11,7 +11,7 @@ public class Triangle {
         this.katheteA = katheteA;
         this.katheteB = katheteB;
     }
-    
+
     public Triangle(){
 
     }
