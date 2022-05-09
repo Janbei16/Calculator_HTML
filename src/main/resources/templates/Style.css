@@ -28,6 +28,17 @@ input{
     right: 318px;
 }
 
+.dote {
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+    position: fixed;
+    top: 403px;
+    right: 417px;
+}
+
+
 img {
     position: absolute;
     top: 0px;
