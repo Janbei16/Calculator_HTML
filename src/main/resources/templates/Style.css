@@ -1,13 +1,27 @@
-input{
-    margin: 5px;¨!important;
-    padding: 10px;!important;
+/*input und rechnen kästchen*/
+.inputs {
+    position: absolute;
+    margin-left: 20px;
+}
+.inputs input{
 
-
+    margin: 5px;
+    padding: 10px;
+}
+button { 
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+}
+/*bild*/
+.inputs img {
+    position:absolute;
+    top: 20px;
+    margin-left: 200px;
 }
 /*background NICHT ÄNDERN zu .area*/
 body{
-    width: auto;
-    height: 100%;
+    
     background: #000000;
     background: -webkit-linear-gradient(to left, #000000, #000000);
     font-family: 'Exo', sans-serif;
@@ -49,12 +63,7 @@ body{
     right: 487px;
 }
 
-/*bild*/
-img {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
+
 /* rechner button*/
 button{
     padding: 10px;
