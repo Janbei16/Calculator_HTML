@@ -22,7 +22,7 @@ button {
 /*background NICHT ÄNDERN zu .area*/
 body{
     
-    background: #000000;
+    background: #2b2b2b;
     background: -webkit-linear-gradient(to left, #000000, #000000);
     font-family: 'Exo', sans-serif;
 }
