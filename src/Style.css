@@ -1,7 +1,4 @@
 /*input und rechnen kästchen*/
-
-
-
 input{
     width: 150px;
     
@@ -17,6 +14,7 @@ input{
     text-decoration: none;
     text-align: center;
 }
+
 /*bild*/
 .img1 {
     position: absolute;
@@ -28,7 +26,7 @@ input{
     
     
 }
-/* vertikale linie in der mitte */
+/* vertikale/horizontale linie in der mitte */
 .middle-line {
     opacity: 1;
     border-left: 6px solid rgb(255, 255, 255);
@@ -51,90 +49,21 @@ input{
 
 /*background NICHT ÄNDERN zu .area*/
 body{
-    
     background: #000000;
     background: -webkit-linear-gradient(to left, #000000, #000000);
     font-family: 'Exo', sans-serif;
 }
-/* CIRCLE */
-/*
-.circle {
-    width: 200px;
-    height: 200px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    background: white;
-    border-style: solid;
-    border-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 450px;
-    right: 290px;
-}
-.circleLIne {
-    height: 1.5px;
-    width: 200px;
-    background-color: black;
-    display: inline-block;
-    position: fixed;
-    top: 505px;
-    right: 388px;
-}
 
-.dote {
-    width: 5px;
-    height: 5px;
-    background: black;
-    border-radius: 50%;
-    position: fixed;
-    top: 503px;
-    right: 487px;
-}
-*/
-
-
-
-
-
-
-
-/* wo ist nutzung dieser klasse?*/
-/*
-.context {
-    width: 100%;
-    position: absolute;
-    top:50vh;
-
-}
-
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
-*/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     body {
-        background: rgb(32, 32, 32);
+        background: rgb(0, 0, 0);
     }
-    /*.img1 {
-        position: absolute;
-        max-width: 40%;
-        height: auto;
-        left: 10px;
-        top: 380px;
-        
-    }*/
     .img1 {
         position: absolute;
         max-width: 60%;
         height: auto;
         left: 200px;
-        top: 26px;
-        
+        top: 26px;  
     }
     .horizontal-line {
         opacity: 1;
@@ -149,15 +78,14 @@ body{
 
 @media screen and (max-width: 800px) {
     body {
-        background: rgb(59, 59, 59);
+        background: rgb(0, 0, 0);
     }
     .img1 {
         position: absolute;
         max-width: 60%;
         height: auto;
         left: 200px;
-        top: 26px;
-        
+        top: 26px;  
     }
     .horizontal-line {
         opacity: 1;
