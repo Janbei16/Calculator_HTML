@@ -49,14 +49,14 @@ input{
 
 /*background NICHT ÄNDERN zu .area*/
 body{
-    background: #000000;
+    background: #222222;
     background: -webkit-linear-gradient(to left, #000000, #000000);
     font-family: 'Exo', sans-serif;
 }
 
 @media screen and (max-width: 1200px) {
     body {
-        background: rgb(0, 0, 0);
+        background: #222222;
     }
     .img1 {
         position: absolute;
@@ -78,7 +78,7 @@ body{
 
 @media screen and (max-width: 800px) {
     body {
-        background: rgb(0, 0, 0);
+        background: #222222;
     }
     .img1 {
         position: absolute;
