@@ -44,17 +44,17 @@ function allSites(KatheteA, KatheteB, KatheteC) {
       180) /
     Math.PI;
   y = 180 - b - a;
-  alert(
-    "Winkel a = " +
-      a +
-      "°" +
-      "\nWinkel b = " +
-      b +
-      "°" +
-      "\nWinkel y = " +
-      y +
-      "°"
-  );
+  document.getElementById("output_print").innerHTML = 
+  "Winkel a = " +
+  a +
+  "°" +
+  "<br>" + "Winkel b = " +
+  b +
+  "°" +
+  "<br>" + "Winkel y = " +
+  y +
+  "°";
+  
 }
 
 function oneSite(KatheteA, KatheteB, KatheteC) {
@@ -63,18 +63,17 @@ function oneSite(KatheteA, KatheteB, KatheteC) {
     b = 60;
     y = 60;
   }
-
-  alert(
-    "Winkel a = " +
-      a +
-      "°" +
-      "\nWinkel b = " +
-      b +
-      "°" +
-      "\nWinkel y = " +
-      y +
-      "°"
-  );
+  document.getElementById("output_print").innerHTML = 
+  "Winkel a = " +
+  a +
+  "°" +
+  "<br>" + "Winkel b = " +
+  b +
+  "°" +
+  "<br>" + "Winkel y = " +
+  y +
+  "°";
+  
 }
 
 function enclosedAngleBetweenTwoSites(
@@ -99,15 +98,16 @@ function enclosedAngleBetweenTwoSites(
         180) /
       Math.PI;
     WinkelY = 180 - WinkelB - WinkelA;
-
-    alert(
-      "Seite a = " +
-        KatheteA +
-        "\nWinkel b = " +
-        WinkelB +
-        "\nWinkel y = " +
-        WinkelY
-    );
+    document.getElementById("output_print").innerHTML = 
+       "Seite a = " +
+       KatheteA +
+       "<br>" + "Winkel b = " +
+       WinkelB +
+       "°" +
+       "<br>" + "Winkel y = " +
+       WinkelY +
+       "°";    
+    
   } else if (WinkelB > 0) {
     KatheteB = Math.sqrt(
       KatheteA * KatheteA +
@@ -122,15 +122,16 @@ function enclosedAngleBetweenTwoSites(
         180) /
       Math.PI;
     WinkelY = 180 - WinkelB - WinkelA;
-
-    alert(
-      "Seite b = " +
-        KatheteB +
-        "\nWinkel a = " +
-        WinkelA +
-        "\nWinkel y = " +
-        WinkelY
-    );
+    document.getElementById("output_print").innerHTML = 
+    "Seite b = " +
+    KatheteB +
+    "<br>" + "Winkel a = " +
+    WinkelA +
+    "°" +
+    "<br>" + "Winkel y = " +
+    WinkelY +
+    "°"; 
+    
   } else if (WinkelY > 0) {
     KatheteC = Math.sqrt(
       KatheteA * KatheteA +
@@ -145,14 +146,16 @@ function enclosedAngleBetweenTwoSites(
         180) /
       Math.PI;
     WinkelB = 180 - WinkelY - WinkelA;
-    alert(
-      "Seite c = " +
-        KatheteC +
-        "\nWinkel a = " +
-        WinkelA +
-        "\nWinkel b = " +
-        WinkelB
-    );
+    document.getElementById("output_print").innerHTML = 
+       "Seite c = " +
+       KatheteC +
+       "<br>" + "Winkel a = " +
+       WinkelA +
+       "°" +
+       "<br>" + "Winkel b = " +
+       WinkelB +
+       "°"; 
+   
   }
 }
 
@@ -168,38 +171,44 @@ function twoSites90Degree(
     KatheteA = Math.sqrt(KatheteB * KatheteB + KatheteC * KatheteC);
     WinkelB = (Math.atan(KatheteB / KatheteC) * 180) / Math.PI;
     WinkelY = 180 - WinkelA - WinkelB;
-    alert(
-      "Seite a = " +
-        KatheteA +
-        "\nWinkel b = " +
-        WinkelB +
-        "\nWinkel y = " +
-        WinkelY
-    );
+    document.getElementById("output_print").innerHTML = 
+       "Seite a = " +
+       KatheteA +
+       "<br>" + "Winkel b = " +
+       WinkelB +
+       "°" +
+       "<br>" + "Winkel y = " +
+       WinkelY +
+       "°"; 
+   
   } else if (WinkelB == 90) {
     KatheteB = Math.sqrt(KatheteA * KatheteA + KatheteC * KatheteC);
     WinkelA = (Math.atan(KatheteA / KatheteC) * 180) / Math.PI;
     WinkelY = 180 - WinkelA - WinkelB;
-    alert(
-      "Seite b = " +
-        KatheteB +
-        "\nWinkel a = " +
-        WinkelA +
-        "\nWinkel y = " +
-        WinkelY
-    );
+    document.getElementById("output_print").innerHTML = 
+       "Seite b = " +
+       KatheteB +
+       "<br>" + "Winkel a = " +
+       WinkelA +
+       "°" +
+       "<br>" + "Winkel y = " +
+       WinkelY +
+       "°"; 
+    
   } else if (WinkelY == 90) {
     KatheteC = Math.sqrt(KatheteA * KatheteA + KatheteB * KatheteB);
     WinkelA = (Math.atan(KatheteA / KatheteB) * 180) / Math.PI;
     WinkelB = 180 - WinkelA - WinkelY;
-    alert(
-      "Seite c = " +
-        KatheteC +
-        "\nWinkel a = " +
-        WinkelA +
-        "\nWinkel b = " +
-        WinkelB
-    );
+    document.getElementById("output_print").innerHTML = 
+       "Seite c = " +
+       KatheteC +
+       "<br>" + "Winkel a = " +
+       WinkelA +
+       "°" +
+       "<br>" + "Winkel b = " +
+       WinkelB +
+       "°"; 
+    
   }
 }
 
@@ -214,13 +223,19 @@ function oneSiteTwoAngles(
   if (KatheteA > 0) {
     if (WinkelA && WinkelB > 0) {
       WinkelY = 180 - WinkelA - WinkelB;
-      alert("Winkel y = " + WinkelY);
+      document.getElementById("output_print").innerHTML = 
+      "Winkel y = " + WinkelY + "°"; 
+      
     } else if (WinkelA && WinkelC > 0) {
       WinkelB = 180 - WinkelY - WinkelA;
-      alert("Winkel b = " + WinkelB);
+      document.getElementById("output_print").innerHTML = 
+      "Winkel b = " + WinkelB + "°"; 
+      
     } else if (WinkelB && WinkelC > 0) {
       WinkelA = 180 - WinkelY - WinkelB;
-      alert("Winkel a = " + WinkelA);
+      document.getElementById("output_print").innerHTML = 
+      "Winkel a = " + WinkelA + "°"; 
+      
     }
     KatheteB =
       (KatheteA * Math.sin((WinkelB * Math.PI) / 180)) /
@@ -228,17 +243,25 @@ function oneSiteTwoAngles(
     KatheteC =
       (KatheteB * Math.sin((WinkelY * Math.PI) / 180)) /
       Math.sin((WinkelB * Math.PI) / 180);
-      alert("Seite b = " + KatheteB + "\nSeite c = " + KatheteC);
+      document.getElementById("output_print").innerHTML = 
+      "Seite b = " + KatheteB + "<br>" + "Seite c = " + KatheteC; 
+      
   } else if (KatheteB > 0) {
     if (WinkelA && WinkelB > 0) {
       WinkelY = 180 - WinkelA - WinkelB;
-      alert("Winkel y = " + WinkelY);
+      document.getElementById("output_print").innerHTML = 
+      "Winkel y = " + WinkelY + "°"; 
+      
     } else if (WinkelA && WinkelY > 0) {
       WinkelB = 180 - WinkelY - WinkelA;
-      alert("Winkel b = " + WinkelB);
+      document.getElementById("output_print").innerHTML = 
+      "Winkel b = " + WinkelB + "°"; 
+      
     } else if (WinkelB && WinkelY > 0) {
       WinkelA = 180 - WinkelY - WinkelB;
-      alert("Winkel a = " + WinkelA);
+      document.getElementById("output_print").innerHTML = 
+      "Winkel a = " + WinkelA + "°"; 
+      
     }
 
     KatheteC =
@@ -247,17 +270,25 @@ function oneSiteTwoAngles(
     KatheteA =
       (KatheteC * Math.sin((WinkelA * Math.PI) / 180)) /
       Math.sin((WinkelY * Math.PI) / 180);
-    alert("Seite a = " + KatheteA + "\nSeite c = " + KatheteC);
+      document.getElementById("output_print").innerHTML = 
+      "Seite a = " + KatheteA + "<br>" + "Seite c = " + KatheteC; 
+    
   } else if (KatheteC > 0) {
     if (WinkelA && WinkelB > 0) {
       WinkelY = 180 - WinkelA - WinkelB;
-      alert("Winkel y = " + WinkelY);
+      document.getElementById("output_print").innerHTML = 
+      "Winkel y = " + WinkelY + "°"; 
+      
     } else if (WinkelA && WinkelC > 0) {
       WinkelB = 180 - WinkelY - WinkelA;
-      alert("Winkel b = " + WinkelB);
+      document.getElementById("output_print").innerHTML = 
+      "Winkel b = " + WinkelB + "°"; 
+      
     } else if (WinkelB && WinkelC > 0) {
       WinkelA = 180 - WinkelY - WinkelB;
-      alert("Winkel a = " + WinkelA);
+      document.getElementById("output_print").innerHTML = 
+      "Winkel a = " + WinkelA + "°"; 
+      
     }
 
     KatheteA =
@@ -266,7 +297,9 @@ function oneSiteTwoAngles(
     KatheteB =
       (KatheteA * Math.sin((WinkelB * Math.PI) / 180)) /
       Math.sin((WinkelA * Math.PI) / 180);
-      alert("Seite a = " + KatheteA + "\nSeite b = " + KatheteB);
+      document.getElementById("output_print").innerHTML = 
+      "Seite a = " + KatheteA + "<br>" + "Seite b = " + KatheteB; 
+      
   }
 }
 
@@ -283,14 +316,18 @@ function twoSitesOneAngle(
         WinkelA = (Math.asin(KatheteA * (Math.sin((WinkelB*0.017453292519943)))/KatheteB))*57.295779513082
         WinkelY = 180 - WinkelA - WinkelB
         KatheteC = KatheteB * Math.sin(WinkelY*0.017453292519943) / Math.sin(WinkelB*0.017453292519943)
-        alert("Seite C = " + KatheteC + "\nWinkel a = " + WinkelA + "\nWinkel y = " + WinkelY);
+        document.getElementById("output_print").innerHTML = 
+        "Seite c = " + KatheteC + "<br>" + "Winkel a = " + WinkelA + "<br>" + "Winkel y =" + WinkelY; 
+        
     }
 
     else if(WinkelA >= WinkelB){
         WinkelB = (Math.asin(KatheteB * (Math.sin((WinkelA*0.017453292519943)))/KatheteA))*57.295779513082
         WinkelY = 180 - WinkelA - WinkelB
         KatheteC = KatheteA * Math.sin(WinkelY*0.017453292519943) / Math.sin(WinkelA*0.017453292519943)
-        alert("Seite C = " + KatheteC + "\nWinkel b = " + WinkelB + "\nWinkel y = " + WinkelY);
+        document.getElementById("output_print").innerHTML = 
+        "Seite c = " + KatheteC + "<br>" + "Winkel b = " + WinkelB + "<br>" + "Winkel y =" + WinkelY; 
+        
     }
 }
 else if (KatheteA && KatheteC > 0){
@@ -298,14 +335,18 @@ else if (KatheteA && KatheteC > 0){
         WinkelY = (Math.asin(KatheteC * (Math.sin((WinkelA*0.017453292519943)))/KatheteA))*57.295779513082
         WinkelB = 180 - WinkelA - WinkelY
         KatheteB = KatheteA * Math.sin(WinkelB*0.017453292519943) / Math.sin(WinkelA*0.017453292519943)
-        alert("Seite B = " + KatheteB + "\nWinkel b = " + WinkelB + "\nWinkel y = " + WinkelY);
+        document.getElementById("output_print").innerHTML = 
+        "Seite B = " + KatheteB + "<br>" + "Winkel b = " + WinkelB + "<br>" + "Winkel y =" + WinkelY; 
+        
     }
 
     else if(WinkelY >= WinkelA){
         WinkelA = (Math.asin(KatheteA * (Math.sin((WinkelY*0.017453292519943)))/KatheteC))*57.295779513082
         WinkelB = 180 - WinkelA - WinkelY
         KatheteB = KatheteC * Math.sin(WinkelB*0.017453292519943) / Math.sin(WinkelY*0.017453292519943)
-        alert("Seite B = " + KatheteB + "\nWinkel b = " + WinkelB + "\nWinkel a = " + WinkelA);
+        document.getElementById("output_print").innerHTML = 
+        "Seite b = " + KatheteB + "<br>" + "Winkel b = " + WinkelB + "<br>" + "Winkel a =" + WinkelA; 
+        
     }
 
 }
@@ -314,7 +355,9 @@ else if (KatheteB && KatheteC > 0){
         WinkelY = (Math.asin(KatheteC * (Math.sin((WinkelB*0.017453292519943)))/KatheteB))*57.295779513082
         WinkelA = 180 - WinkelB - WinkelY
         KatheteA = KatheteB * Math.sin(WinkelA*0.017453292519943) / Math.sin(WinkelB*0.017453292519943)
-        alert("Seite A = " + KatheteA + "\nWinkel a = " + WinkelA + "\nWinkel y = " + WinkelY);
+        document.getElementById("output_print").innerHTML = 
+        "Seite a = " + KatheteA + "<br>" + "Winkel a = " + WinkelA + "<br>" + "Winkel y =" + WinkelY; 
+        
     }
     else if(WinkelY >= WinkelB){
         WinkelB = (Math.asin(KatheteB * (Math.sin((WinkelY*0.017453292519943)))/KatheteC))*57.295779513082
@@ -323,7 +366,9 @@ else if (KatheteB && KatheteC > 0){
         console.log(KatheteA)
         console.log(WinkelA)
         console.log(WinkelB)
-        alert("Seite A = " + KatheteA + "\nWinkel a = " + WinkelA + "\nWinkel b = " + WinkelB);
+        document.getElementById("output_print").innerHTML = 
+        "Seite a = " + KatheteA + "<br>" + "Winkel a = " + WinkelA + "<br>" + "Winkel b =" + WinkelB; 
+        
     }
 }
 
