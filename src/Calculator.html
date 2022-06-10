@@ -8,6 +8,16 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <select id="select">
+        <option id="AllSites" value="1">Alle drei Seiten</option>
+        <option id="OneSite" value="2">Eine Seite bei gleichseitigem Dreieck</option>
+        <option id="TwoSitesEnclosedAngle" value="3">Zwei Seiten mit eingeschlossenem Winkel</option>
+        <option id="TwoKathete" value="4">Zwei Katheten bei rechtwinkligem Dreieck</option>
+        <option id="OneSiteTwoAngles" value="5">Eine Seite zwei Winkel</option>
+        <option id="TwoSitesOneAngle" value="6">Zwei Seiten und Winkel gegenüber der längeren Seite</option>
+
+    </select>
+
     <!--
 <div class="area">
 -->
@@ -23,22 +33,17 @@
     <input placeholder="Winkel = a" id="WinkelAId" type="input"><br><br>
     <input placeholder="Winkel = b" id="WinkelBId" type="input"><br><br>
     <input placeholder="Winkel = y" id="WinkelYId" type="input"><br>
-    
-    <button onclick="JavaScript:Calculator()">Rechnen</button>
-
+    <button onclick="JavaScript:Calculator()" id="Button">Rechnen</button>
     <img class="img1" style="backdrop-filter: blur()" src="https://assets.serlo.org/legacy/56dea9373372b_353bb3239d41c9f6097b1c7dc10daf0fd7d76215.png">
 </div>
 
 
 
+
+
     <br>
     <br>
-    <!--
-    <div class="circles">
-        <div class="circle"></div>
-        <div class="circleLIne"></div>
-        <div class="dote"></div>
-    </div>-->
+
     <ul class="circles">
         <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
 

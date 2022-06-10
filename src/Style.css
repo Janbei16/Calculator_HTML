@@ -1,10 +1,17 @@
 /*input und rechnen kästchen*/
 input{
+
     width: 150px;
     
     padding: 10px;
     
 }
+
+.container-inputs{
+    margin-top: 20px;
+}
+
+
 .container-inputs button { 
     width: 150px;
     padding: 10px;
@@ -21,14 +28,8 @@ input{
     max-width: 30%;
     height: auto;
     left: 200px;
-    top: 26px;
-    
-    
+    top: 47px;
     filter: invert(1);
-    
-    
-    
-    
 }
 /* vertikale/horizontale linie in der mitte */
 .middle-line {
