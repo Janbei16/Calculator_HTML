@@ -51,10 +51,10 @@ input{
 /*bild*/
 .img1 {
     position: absolute;
-    max-width: 600px;
+    max-width: 40%;
     height: auto;
-    left: 0px;
-    top: 450px;
+    left: 150px;
+    top: 50px;
     filter: invert(1);
 }
 /* vertikale/horizontale linie in der mitte */
@@ -109,7 +109,7 @@ body{
         position: absolute;
        
         left: 0%;
-        top: 65%;
+        top: 60%;
         width: 100%;
         height: auto;
 
